@@ -1,0 +1,45 @@
+table.mat-table {
+  width: 100%;
+}
+
+tr.mat-footer-row, tr.mat-row {
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.userCard-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Helvetica Neue", sans-serif;
+}
+.userCard{
+  width: 30%;
+  background-color: white;
+  box-shadow: 0 0 9px 1px #cecbcb;
+  padding: 20px;
+  &__text {
+    font-size: 16px;
+    font-weight: bold;
+    span{
+      margin-left: 10px;
+      color: gray;
+      font-weight: normal;
+    }
+  }
+}
+.backBtn{
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  &:hover{
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}

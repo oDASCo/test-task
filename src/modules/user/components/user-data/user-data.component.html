@@ -1,0 +1,11 @@
+<div class="userCard-container" *ngIf="isLoaded">
+  <div class="userCard">
+    <p class="userCard__text">Email: <span>{{user?.data.email}}</span></p>
+    <p class="userCard__text">First Name: <span>{{user?.data.first_name}}</span></p>
+    <p class="userCard__text">Last Name: <span>{{user?.data.last_name}}</span></p>
+  </div>
+</div>
+
+<div *ngIf="!isLoaded">
+  loading...
+</div>
